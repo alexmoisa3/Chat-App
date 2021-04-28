@@ -1,9 +1,6 @@
 import { Injectable } from '@angular/core';
 
-/*
-  Author : KM.Raouf
-  Email : yajuve.25.dz@gmail.com
-*/
+
 @Injectable()
 export class Util {
 
