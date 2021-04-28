@@ -4,12 +4,6 @@ import {HttpProvider} from "../../providers/http/http";
 import {Friend} from "../../models/user";
 import {Util} from "../../providers/util/util";
 
-/**
- * Generated class for the ListFriendsPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -17,10 +11,6 @@ import {Util} from "../../providers/util/util";
   templateUrl: 'list-friends.html',
 })
 
-/**
- * @author: KMR
- * @email: yajuve.25.dz@gmail.com
- */
 
 export class ListFriendsPage {
 
