@@ -1,0 +1,79 @@
+<!--
+  Generated template for the MyProfilePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Profilul Meu</ion-title>
+    <ion-buttons end>
+      <button (click)="doSubmit()" ion-button icon-only >
+        <ion-icon name="checkmark"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+
+</ion-header>
+
+
+<ion-content padding-top *ngIf="!isLoading">
+
+  <div text-center>
+    <img id="my-avatar" [src]="Util.pathAvatar(profile.avatar)">
+  </div>
+
+  <form (submit)="doSubmit()">
+    <ion-list>
+
+      <ion-item-divider color="light" text-center> </ion-item-divider>
+
+      <ion-item>
+        <ion-label stacked>{{ 'Username' | translate }}</ion-label>
+        <ion-input type="text" [(ngModel)]="profile.username" name="username"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label stacked>{{ 'Nume' | translate }}</ion-label>
+        <ion-input type="text" [(ngModel)]="profile.fullname" name="fullname"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label stacked>{{ 'EMAIL' | translate }}</ion-label>
+        <ion-input type="email" [(ngModel)]="profile.email" name="email"></ion-input>
+      </ion-item>
+
+      <ion-item-divider color="danger" text-center> <ion-icon name="lock"></ion-icon> Schimba parola </ion-item-divider>
+
+      <ion-item>
+        <ion-label stacked>{{ 'Parola' | translate }}</ion-label>
+        <ion-input type="password" [(ngModel)]="profile.password" name="password"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label stacked>{{ 'Verifica Parola' | translate }}</ion-label>
+        <ion-input type="password" [(ngModel)]="profile.password" name="retry-password"></ion-input>
+      </ion-item>
+
+      <div padding text text-center>
+        <ion-buttons>
+          <button ion-button  color="primary" (click) = "exceptButtonClick() "  >
+          {{ 'ACCEPTA' | translate }} <ion-icon name="checkmark"></ion-icon>
+        </button>
+        </ion-buttons>
+      </div>
+
+    </ion-list>
+  </form>
+</ion-content>
+
+<ion-navbar *navbar>
+  <button menuToggle>
+  <ion-icon name="menu"></ion-icon>
+</button>
+  <ion-title>Getting Started</ion-title>
+</ion-navbar>
+
+
