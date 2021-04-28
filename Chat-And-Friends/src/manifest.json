@@ -1,6 +1,6 @@
 {
-  "name": "TemoChat",
-  "short_name": "TemoChat",
+  "name": "Chat&Friends",
+  "short_name": "Chat&Friends",
   "start_url": "index.html",
   "display": "standalone",
   "icons": [{
