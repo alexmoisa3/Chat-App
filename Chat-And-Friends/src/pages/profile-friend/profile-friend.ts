@@ -3,12 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {Friend} from "../../models/user";
 import {Util} from "../../providers/util/util";
 
-/**
- * Generated class for the ProfileFriendPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+
 
 @IonicPage()
 @Component({
@@ -16,10 +11,7 @@ import {Util} from "../../providers/util/util";
   templateUrl: 'profile-friend.html',
 })
 
-/**
- * @author: KMR
- * @email: yajuve.25.dz@gmail.com
- */
+
 
 export class ProfileFriendPage {
 
