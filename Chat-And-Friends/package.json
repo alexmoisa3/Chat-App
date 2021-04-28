@@ -1,7 +1,7 @@
 {
-  "name": "temoChat",
-  "version": "1.0.0",
-  "author": "KMR",
+  "name": "Chat&Friends",
+  "version": "2.1.0",
+  "author": "alexmoisa3",
   "homepage": "",
   "private": true,
   "scripts": {
@@ -37,5 +37,5 @@
     "@ionic/lab": "3.2.9",
     "typescript": "2.4.2"
   },
-  "description": "Temo Chat Theme"
+  "description": "Chat&Friends theme"
 }
